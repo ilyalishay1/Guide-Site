@@ -1,0 +1,88 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Explore Belarus</title>
+    <link rel="stylesheet" href="{% static 'guides/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'guides/css/extra-large-screen-style.css' %}">
+    <link rel="stylesheet" href="{% static 'guides/css/extra-plus-plus-large-screen-style.css' %}">
+    <link rel="stylesheet" href="{% static 'guides/css/large-plus-screen-style.css' %}">
+    <link rel="stylesheet" href="{% static 'guides/css/extra-plus-large-screen-style.css' %}">
+    <link rel="stylesheet" href="{% static 'guides/css/large-screen-style.css' %}">
+    <link rel="stylesheet" href="{% static 'guides/css/medium-screen-style.css' %}">
+    <link rel="stylesheet" href="{% static 'guides/css/medium-plus-screen-style.css' %}">
+    <link rel="stylesheet" href="{% static 'guides/css/small-screen-style.css' %}">
+    <style>
+        html {
+            background-image: url({% static 'guides/image/main-cover.jpeg' %});
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <a href="{% url 'home' %}" class="logo">Everyday</a>
+    <div class="main-menu">
+        <a href="{% url 'destinations' %}">Destinations</a>
+        <a href="{% url 'activities' %}">Activities</a>
+        <a href="{% url 'about-us' %}">About Us</a>
+    </div>
+</nav>
+<div class="main-info-container">
+    <div class="links">
+        <a><img src="{% static 'guides/image/calendar.svg' %}"></a><br>
+        <a><img src="{% static 'guides/image/instagram-logo.svg' %}"></a><br>
+        <a><img src="{% static 'guides/image/email.svg' %}"></a><br>
+    </div>
+    <div class="main-text">
+        <p>Explore</p>
+        <p>Belarus</p>
+    </div>
+</div>
+<div class="geotags-container">
+    <a href="#">
+        <div class="geotags-box">
+            <div class="geotag-img-box">
+                <a><img src="{% static 'guides/image/geomark.svg' %}" class="geotag-img"></a>
+            </div>
+            <div class="geotags-text">
+                <p class="geotags-main-text">Minsk</p>
+                <span class="geotags-second-text">The beautiful capital</span>
+            </div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="geotags-box">
+            <div class="geotag-img-box">
+                <a><img src="{% static 'guides/image/geomark.svg' %}" class="geotag-img"></a>
+            </div>
+            <div class="geotags-text">
+                <p class="geotags-main-text">Grodno</p>
+                <span class="geotags-second-text">Historical center</span>
+            </div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="geotags-box">
+            <div class="geotag-img-box">
+                <a><img src="{% static 'guides/image/geomark.svg' %}" class="geotag-img"></a>
+            </div>
+            <div class="geotags-text">
+                <p class="geotags-main-text">Brest</p>
+                <p class="geotags-second-text">City-Hero</p>
+            </div>
+        </div>
+    </a>
+</div>
+</body>
+</html>
