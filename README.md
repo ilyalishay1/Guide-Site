@@ -1,2 +1,2 @@
 # Guide site for Belarus.
-Guide site for Belarus. Repository contains django files.
+Guide site for Belarus (not finished)
